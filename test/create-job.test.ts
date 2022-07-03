@@ -35,4 +35,16 @@ describe("Create job test", () => {
       );
     }).toThrow(new Error("Start have to be greater than end"));
   });
+
+  it("Should throw an error if price is less or equal zero", () => {
+    expect(() => {
+      new Job(
+        "Developer",
+        "Create an authentication module",
+        new Date("2022-01-10T10:00:00"),
+        new Date("2022-01-10T18:00:00"),
+        0
+      );
+    }).toThrow(new Error("Price must be greater than zero"));
+  });
 });
