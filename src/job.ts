@@ -1,5 +1,6 @@
 export default class Job {
   constructor(
+    readonly id: string,
     private title: string,
     private description: string,
     private start: Date,

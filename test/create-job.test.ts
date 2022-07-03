@@ -3,6 +3,7 @@ import Job from "../src/job";
 describe("Create job test", () => {
   it("Have to be created", () => {
     const job = new Job(
+      "123",
       "Developer",
       "Create an authentication module",
       new Date("2022-01-10T10:00:00"),
@@ -15,6 +16,7 @@ describe("Create job test", () => {
   it("Should throw an error if start be greater than end", () => {
     expect(() => {
       new Job(
+        "123",
         "Developer",
         "Create an authentication module",
         new Date("2022-01-10T17:00:00"),
@@ -27,6 +29,7 @@ describe("Create job test", () => {
   it("Should throw an error if start equal to end", () => {
     expect(() => {
       new Job(
+        "123",
         "Developer",
         "Create an authentication module",
         new Date("2022-01-10T17:00:00"),
@@ -39,6 +42,7 @@ describe("Create job test", () => {
   it("Should throw an error if price is less or equal zero", () => {
     expect(() => {
       new Job(
+        "123",
         "Developer",
         "Create an authentication module",
         new Date("2022-01-10T10:00:00"),
