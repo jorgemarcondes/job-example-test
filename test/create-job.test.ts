@@ -1,5 +1,5 @@
-import Job from "../src/job";
-import { JobStatus } from "../src/job-status.enum";
+import Job from "../src/domain/entity/job";
+import { JobStatus } from "../src/domain/job-status.enum";
 
 describe("Create job", () => {
   it("should to be created", async () => {

@@ -1,4 +1,4 @@
-import Employee from "../src/employee";
+import Employee from "../src/domain/entity/employee";
 
 describe("Create employee", () => {
   it("Have to be created", () => {

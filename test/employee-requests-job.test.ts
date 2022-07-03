@@ -1,8 +1,8 @@
-import Employee from "../src/employee";
-import Job from "../src/job";
-import Company from "../src/company";
-import JobRequest from "../src/job-request";
-import { JobStatus } from "../src/job-status.enum";
+import Employee from "../src/domain/entity/employee";
+import Job from "../src/domain/entity/job";
+import Company from "../src/domain/entity/company";
+import JobRequest from "../src/application/job-request";
+import { JobStatus } from "../src/domain/job-status.enum";
 
 describe("Employee requests a job", () => {
   it("should request a job", async () => {

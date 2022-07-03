@@ -1,9 +1,9 @@
 import { v4 as uuidv4 } from "uuid";
-import { JobStatus } from "./job-status.enum";
+import { JobStatus } from "../job-status.enum";
 
 export default class Job {
   readonly id: string;
-  private price: number = 0;
+  readonly price: number = 0;
   readonly status: JobStatus;
 
   constructor(

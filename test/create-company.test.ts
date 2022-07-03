@@ -1,4 +1,4 @@
-import Company from "../src/company";
+import Company from "../src/domain/entity/company";
 
 describe("Create company", () => {
   it("Have to be created", () => {
