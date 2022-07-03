@@ -4,9 +4,9 @@ export default class Company {
   jobs: string[] = [];
 
   constructor(
-    private identity: string,
-    private name: string,
-    private address: string
+    readonly identity: string,
+    readonly name: string,
+    readonly address: string
   ) {}
 
   addJob(jobId: string) {
