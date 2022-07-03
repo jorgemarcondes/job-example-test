@@ -1,9 +1,9 @@
 export default class Employee {
   constructor(
-    private identity: string,
-    private name: string,
-    private dob: Date,
-    private address: string
+    readonly identity: string,
+    readonly name: string,
+    readonly dob: Date,
+    readonly address: string
   ) {
     const today = new Date();
     let age = today.getFullYear() - dob.getFullYear();
