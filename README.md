@@ -5,9 +5,12 @@ This is a platform to get one day job shifts.
 # Domains
 ## Company
     Attributes: identity, name, address 
+ - A company can be favorite by an Employee, this will affect get jobs list.
 
 ## Employee
     Attributes: identity, name, dob, address
+ - An employee will be **frozen** by system, when **NO_SHOW** to some job, for 15 days. (Will be blocked to request new jobs)
+ - Can request POSTED, VIEWED and REQUESTED jobs, following this order, and most nearby to start
 
 ## Job
     Attributes: title, description, start, end, price
