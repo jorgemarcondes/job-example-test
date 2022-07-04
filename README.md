@@ -5,31 +5,14 @@ This is a platform to get one day job shifts.
 # Domains
 ## Company
     Attributes: identity, name, address 
-Actions:
-
-    Create Company
-# Get a Shift
-
-This is a platform to get one day job shifts.
-
-# Domains
-## Company
-    Attributes: identity, name, address 
-Actions:
-
-    Create Company
-
-## Job
-    Attributes: title, description, start, end, price
-Actions: 
-
-    Create Job
 
 ## Employee
     Attributes: identity, name, dob, address
 
+## Job
+    Attributes: title, description, start, end, price
+
 >Job Status
- 
 ```mermaid
 graph TD
     A(CREATED)--> |Calculate price| B(POSTED)
@@ -42,7 +25,3 @@ graph TD
     C--> H
     
 ```
-
-
-## Billing 
-## Payment

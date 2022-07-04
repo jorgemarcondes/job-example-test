@@ -8,7 +8,7 @@ describe("Calculate job price", () => {
   let job: Job;
   let calculateJobPrice: CalculateJobPrice;
 
-  beforeEach(() => {
+  beforeEach(async () => {
     jobRepository = new JobRepositoryMemory();
     calculateJobPrice = new CalculateJobPrice(jobRepository);
     job = new Job(
@@ -19,7 +19,7 @@ describe("Calculate job price", () => {
       new Date("2022-01-10T10:00:00"),
       new Date("2022-01-10T19:00:00")
     );
-    jobRepository.save(job);
+    await jobRepository.save(job);
   });
 
   it("should calculate price", async () => {
