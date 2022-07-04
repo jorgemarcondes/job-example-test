@@ -1,6 +1,6 @@
-import Employee from "../src/domain/entity/employee";
+import Employee from "../../src/domain/entity/employee";
 
-describe("Create employee", () => {
+describe("Employee", () => {
   it("Have to be created", () => {
     const employee = new Employee(
       "123",

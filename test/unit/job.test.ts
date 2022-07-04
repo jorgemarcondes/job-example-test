@@ -1,10 +1,11 @@
-import Job from "../src/domain/entity/job";
-import { JobStatus } from "../src/domain/job-status.enum";
+import Job from "../../src/domain/entity/job";
+import { JobStatus } from "../../src/domain/job-status.enum";
 
-describe("Create job", () => {
+describe("Job", () => {
   it("should to be created", async () => {
     const job = new Job(
       "123",
+      "Development",
       "Developer",
       "Create an authentication module",
       new Date("2022-01-10T10:00:00"),
@@ -18,6 +19,7 @@ describe("Create job", () => {
     expect(() => {
       new Job(
         "123",
+        "Development",
         "Developer",
         "Create an authentication module",
         new Date("2022-01-10T17:00:00"),
@@ -30,6 +32,7 @@ describe("Create job", () => {
     expect(() => {
       new Job(
         "123",
+        "Development",
         "Developer",
         "Create an authentication module",
         new Date("2022-01-10T17:00:00"),
@@ -41,11 +44,13 @@ describe("Create job", () => {
   it("should create job with status CREATED", () => {
     const job = new Job(
       "123",
+      "Development",
       "Developer",
       "Create an authentication module",
       new Date("2022-01-10T10:00:00"),
       new Date("2022-01-10T17:00:00")
     );
     expect(job.status).toBe(JobStatus.CREATED);
+    expect(job.price).toBe(0);
   });
 });
